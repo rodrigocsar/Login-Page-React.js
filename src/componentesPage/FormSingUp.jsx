@@ -22,7 +22,11 @@ export const FormSingUp = () => {
                 <div className='register'>
                     <input  type="text" placeholder="Name"/><i className="fa-solid fa-user"></i>
                     <input  type="email" placeholder="Email"/><i  className="fa-solid fa-envelope" ></i>
-                    <input type={passwordVisible ? 'text':  'password'} placeholder="Password"/><i className={passwordVisible ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} onClick={togglePasswordVisibility}></i>
+                    {/* Input com visible password*/}      
+                    <input type={passwordVisible ? 'text':  'password'} placeholder="Password"/>
+                    <i className={passwordVisible ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} 
+                    onClick={togglePasswordVisibility}></i>
+
                 </div>
                 <button > Sign Up</button>
             </form>
