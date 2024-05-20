@@ -1,0 +1,29 @@
+.registerSingUp i{  
+    font-size: 14px;
+    align-items: center;
+    color: #757171;
+    margin: 20px -25px;
+   
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+  
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+@media (max-width: 575.98px) {
+
+    .container.active .sign-up{
+        transform: translateY(80%);        
+        animation: move 0.6s ;       
+    }
+
+}

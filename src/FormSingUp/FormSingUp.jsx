@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import '../FormSingUp/singUp.css'
+
 export const FormSingUp = () => {
   
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -19,16 +21,24 @@ export const FormSingUp = () => {
                     <a href="https://www.linkedin.com/" target="blank"  className="icon"><i className="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registeration</span>
-                <div className='register'>
-                    <input  type="text" placeholder="Name"/><i className="fa-solid fa-user"></i>
-                    <input  type="email" placeholder="Email"/><i  className="fa-solid fa-envelope" ></i>
-                    {/* Input com visible password*/}      
-                    <input type={passwordVisible ? 'text':  'password'} placeholder="Password"/>
-                    <i className={passwordVisible ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} 
-                    onClick={togglePasswordVisibility}></i>
+                <div className='registerSingUp'>
+                   <label  aria-label="Create Username">
+                    <input type="text" placeholder="Name" /><i className="fa-solid fa-user" ></i>
 
+                   </label>
+  
+                    <input type="email" placeholder="Email"/><i className="fa-solid fa-envelope" aria-label="Create-Email"></i>
+                   
                 </div>
-                <button > Sign Up</button>
+                <div className="eye">
+               
+                    <input  type={passwordVisible ? 'text' : 'password'} placeholder="Password" aria-label="Password"/>
+                    <i className={passwordVisible ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} 
+                    onClick={togglePasswordVisibility} ></i>
+             
+                </div>
+
+                <button aria-label="Create registration button">Sign Up</button>
             </form>
         </div>
   );

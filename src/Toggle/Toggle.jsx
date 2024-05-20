@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { FormSingIn } from './FormSingIn'
-import { FormSingUp } from './FormSingUp'
+import { FormSingIn } from '../FormSingIn/FormSingIn'
+import { FormSingUp } from '../FormSingUp/FormSingUp'
 
-import '../componentsStyle/toggleContainer.css'
+import { Button } from '../Button/Button'
 
-export default function ToggleContainer() {
-   
+import '../Toggle/toggle.css'
+
+export const Toggle = () => {
   const [isActive, setIsActive] = useState(false);
     
   const handleRegisterClick = () => {
@@ -15,23 +16,22 @@ export default function ToggleContainer() {
     const handleLoginClick = () => {
       setIsActive(false);
     };
-
+    
   return (
     <div  id="container" className={isActive ? "container active" : "container"}>
-       
           <FormSingUp/>
           <FormSingIn/>
           <div className="toggle-container">
               <div className="toggle">
                   <div className="toggle-panel toggle-left">
                       <h1>Welcome Back!</h1>
-                      <p>Enter your personal details to use all of site features</p>
-                      <button className="hidden" id="login" onClick={handleLoginClick}>Sign In</button>
+                      <p>Enter your personal details to use all of site features</p>             
+                      <Button id="login" onClick={handleLoginClick}text="Sing In" ></Button>                      
                   </div>
                   <div className="toggle-panel toggle-right">
                       <h1>Hello, Friend!</h1>
                       <p>Register with your personal details to use all of site features</p>
-                      <button className="hidden" id="register" onClick={handleRegisterClick}>Sign Up</button>
+                      <Button id="register" onClick={handleRegisterClick} text="Sign Up"  />
                   </div>
               </div>
           </div>

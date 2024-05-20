@@ -1,0 +1,93 @@
+.registerSingIn, label{  
+    font-size: 14px;
+    align-items: center;
+    color: #757171;
+    margin: 0px  0;
+    width: 100%;
+}
+
+
+
+.remember-forget {
+    display: flex;
+    margin: -3px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.remember-forget label{
+    display: flex;
+    font-size: 12px;
+    white-space: nowrap;
+    justify-content: space-between;
+    margin-right:30px;
+    gap: 8px;
+    align-items: center;
+    
+}
+
+.remember-forget input {
+    display: flex;
+    accent-color: #333;
+    margin-top: 5px;
+    
+    cursor: pointer;
+    border: 2px solid black; 
+     
+   
+}
+  
+ .remember-forget a:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
+
+  
+.remember-forget a{
+    display: flex;
+    font-size: 12px;
+    margin-left:20px; 
+    text-decoration: none;
+}
+
+.forget{
+    cursor: pointer;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .container.active .sign-in{
+    transform: translateX(100%);
+  }
+
+
+@media (max-width: 575.98px) {
+    
+    .remember-forget{
+        display: flex;
+        margin: -10px 0 15px;        
+    }
+
+    .remember-forget a{        
+        white-space: nowrap;
+        margin: 1px 0 3px -30px;
+               
+    }
+
+    .remember-forget label{       
+        margin-right: 50px; 
+              
+    }
+
+    .container.active .sign-in{
+        transform: translateY(50%);
+        opacity: 0;
+        
+    }
+  
+  }
