@@ -7,9 +7,9 @@ import './App.css';
 function App() {
 
     return (
-    
-    <Toggle/> 
-      
+
+       <Toggle />
+   
   );
 }
 
