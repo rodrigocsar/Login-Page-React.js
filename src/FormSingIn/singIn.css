@@ -1,93 +1,88 @@
-.registerSingIn, label{  
-    font-size: 14px;
-    align-items: center;
-    color: #757171;
-    margin: 0px  0;
-    width: 100%;
+div.label-icon i {
+    color: #afaeae;
 }
 
-
-
-.remember-forget {
-    display: flex;
-    margin: -3px 0 20px;
-    justify-content: space-between;
-    align-items: center;
-    white-space: nowrap;
-}
-
-.remember-forget label{
-    display: flex;
+label.label-box {
     font-size: 12px;
-    white-space: nowrap;
-    justify-content: space-between;
-    margin-right:30px;
-    gap: 8px;
-    align-items: center;
-    
 }
 
-.remember-forget input {
-    display: flex;
-    accent-color: #333;
-    margin-top: 5px;
-    
+.input-wapper i.fa-eye {
+    padding-top: 1px;
+    left:  1px ;
+}
+
+input.input-email, .input-password {
+    margin-left: 8px;
+}
+
+input.input-email::placeholder { 
+    position: relative;
+
+}
+
+.remember-forgot {
+   white-space: nowrap;
+}
+
+.input-checkbox {
+    margin-right: 2px;
+    margin-bottom: 1px;
+}
+
+.remember-forgot input {
+    accent-color: #333;   
     cursor: pointer;
-    border: 2px solid black; 
-     
-   
+    border: 2px solid black;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    white-space: nowrap;
 }
   
- .remember-forget a:hover{
+ .remember-forgot a:hover {
     color: #ccc;
     text-decoration: underline;
 }
 
-  
-.remember-forget a{
-    display: flex;
-    font-size: 12px;
-    margin-left:20px; 
-    text-decoration: none;
-}
-
-.forget{
+.forgot {
     cursor: pointer;
 }
 
-.sign-in{
+.sign-in {
     left: 0;
     width: 50%;
     z-index: 2;
-  }
-  
-  .container.active .sign-in{
+}
+
+.container.active .sign-in {
     transform: translateX(100%);
-  }
+}
 
 
 @media (max-width: 575.98px) {
-    
-    .remember-forget{
-        display: flex;
-        margin: -10px 0 15px;        
+
+    .remember-forgot {
+       padding: 0 ;
     }
 
-    .remember-forget a{        
-        white-space: nowrap;
-        margin: 1px 0 3px -30px;
-               
+    .input-checkbox {
+        margin-right: 4px;
+        margin-bottom: 2px;
     }
 
-    .remember-forget label{       
-        margin-right: 50px; 
-              
+    .form-sing-in{
+        margin-top: 40%;       
+    }
+
+    .input-wapper{
+        width: 100%;
+        height: 35%;
     }
 
     .container.active .sign-in{
         transform: translateY(50%);
         opacity: 0;
-        
     }
-  
   }
+

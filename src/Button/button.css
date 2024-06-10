@@ -1,6 +1,6 @@
 
  
- button{
+button{
   background-color: #512da8;
   color: #fff;
   font-size: 12px;
@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
- button.hidden{
+button.hidden{
   background-color: transparent;
   border-color: #fff;    
 } 
