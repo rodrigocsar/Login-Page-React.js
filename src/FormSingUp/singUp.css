@@ -1,9 +1,30 @@
-label.label-icon i {
+label.sing-up-input i {
     color: #afaeae;
     
 }
 
+.input-sing-up {
+    height: 30%;
+}
 
+.input-sing-up .fa-eye-slash, 
+.input-sing-up .fa-eye{
+    position: relative;
+    left: 87%;
+    top: -45.2px;
+    
+}
+
+.input-sing-up .fa-user, .input-sing-up .fa-lock{
+    left: 18px;
+    
+}
+
+input.input-email, .input-password {
+  
+    text-indent: 25px;
+
+}
 
 .sign-up {
     left: 0;
@@ -17,16 +38,34 @@ label.label-icon i {
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
+    transition: all 0.6s ease-in-out;
+
 }
 @media (max-width: 575.98px) {
 
     .form-sing-up {
         position: relative;
-       bottom: 35%;
+       top: 50px;
+       
     }
 
+    .input-sing-up .fa-eye-slash, 
+    .input-sing-up .fa-eye{
+        position: relative;
+        left: 85%;
+    
+}   .sign-up {
+    left: 100%;
+    transition: all 0.6s ease-in-out;
+
+    
+}
+
     .container.active .sign-up {
-        transform: translateY(85%);
+        transform: translateX(-100%);
+        transition: all 0.6s ease-in-out;
+
+
 
     }
 

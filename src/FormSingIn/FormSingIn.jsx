@@ -51,30 +51,26 @@ export const FormSingIn = () => {
 
                 <div aria-label='Create Username' className='input-sing-in m-0 w-100'> {/* Div input */}
                     <div  className='label-icon '>
-                        <div className='input-wapper position-relative px-3 w-100'>
+                       
                             <i className='fa-solid fa-user m-0 my-3'/>
                             <input type='email' 
                              placeholder='E-mail' aria-label='Email'  
                              className='input-email border-0 my-1 py-2 px-3 w-100 '/>
-                        </div> 
+                     
 
-                        <div className='input-wapper position-relative px-3 w-100 '>
-                            <i className='fa-solid fa-lock m-0 '/>
+                            <i className='fa-solid fa-lock d-flex m-0  my-3'/>
                             <input type={passwordVisible ? 'text':  'password'}id='password-in' 
                                placeholder='Password' 
                                className='input-password border-0 my-1 py-2 px-3 w-100' 
                             />  {/*  functions password Visible  */}
 
                             <i className={passwordVisible ? 
-                                        'fa-solid fa-eye-slash position-relative m-0 my-3 ' 
-                                        : 'fa-solid fa-eye position-relative  m-0 my-3  '} 
+                                        'fa-solid fa-eye-slash position-relative m-0' 
+                                        : 'fa-solid fa-eye position-relative m-0 '} 
                                onClick={togglePasswordVisibility} 
                                aria-label='Password'
                             />  {/* function Icon switching  */}
-                       </div>
-                    </div>
-
-
+                       
                     <div className='remember-forgot  d-flex justify-content-between m-1'>
                         <label htmlFor='checkbox' 
                                className='label-box d-flex '>
@@ -88,6 +84,9 @@ export const FormSingIn = () => {
                            tabIndex='0' >Forgot Your Password?
                         </a> {/*  function Forgot page visible  */}
                    </div>
+                    </div>
+
+
                 </div>
                <button aria-label='Sign In'>Sign In</button>
             </form>

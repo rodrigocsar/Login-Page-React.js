@@ -42,23 +42,21 @@ export const FormSingUp = () => {
                 <div className='input-sing-up m-0 w-100'> {/* Div input */}
 
                     <div  aria-label='Create Username' className='label-icon  '>
-                        <div className='input-wapper position-relative px-3 w-100'>
                             <i className='fa-solid fa-at m-0 my-3'/>         
                             <input type='text' 
                                    placeholder='Name' 
                                    className='input-email border-0 my-1 py-2 px-3 w-100 '
                             />
-                        </div>
-                        <div className='input-wapper position-relative px-3 w-100'>
-                            <i className='fa-solid fa-user m-0 my-3' aria-label='Create-Email'></i>
+
+                        
+                        
+                        <i className='fa-solid fa-user d-flex m-0 my-0 py-3'/>
                             <input type='email' 
-                                   placeholder='Email'
-                                   className='input-email border-0 my-1 py-2 px-3 w-100 '
-                            />
+                             placeholder='E-mail' aria-label='Email'  
+                             className='input-email border-0 my-1 py-2 px-3 w-100 '/>
                    
-                        </div>
-                        <div className='input-wapper position-relative px-3 w-100 '>
-                            <i className='fa-solid fa-lock m-0 '/>
+                       
+                            <i className='fa-solid fa-lock d-flex m-0 my-0 py-3 '/>
                             <input type={passwordVisible ? 'text':  'password'} 
                                    placeholder='Password' 
                                    className='input-password border-0 my-1 py-2 px-3 w-100 ' />
@@ -66,7 +64,6 @@ export const FormSingUp = () => {
                                                             : 'fa-solid fa-eye position-relative  m-0 my-3'} 
                                onClick={togglePasswordVisibility} 
                                aria-label='Password'/> {/*  function Icon switching  */}
-                        </div>
                    </div>
                 </div>
               <button aria-label='Create registration button'>Sign Up</button>

@@ -1,7 +1,7 @@
 .form-container {
     transition: all 0.6s ease-in-out;   
-  }
-  
+}
+
 .toggle {
     background-color: #512da8;
     color: #fff;
@@ -49,58 +49,59 @@
 .toggle-right {  
     right: 0;
     transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+
 }
   
 .container.active .toggle-right {
-    transform: translateX(200%);  
+    transform: translateX(200%); 
+    transition: all 0.8s ease; 
+
 }
 
-  @media (max-width: 575.98px) {
-      
-    .form-container{
+@media (max-width: 575.98px) {
+    .form-container {
         width: 100%;
         transition: all 0.6s ease-in-out;
         top: -30%;
-   }
-    
+    }
+
     .form {
-      margin-bottom: 100%;
-      margin-top: -50%;
-       
+        margin-bottom: 100%;
+        margin-top: -50%;
     }
 
     .toggle-container {
         top: 60%;
         left: 0%;
-        border-radius: 40px  40px 0 0 ;
+        border-radius: 40px 40px 0 0;
         min-width: 80vw;
         max-height: 50vh;
+        transition: all 0.6s ease-in-out;
     }
 
     .container.active .toggle-container {
-        transform: translateY(-100%);
-        border-radius:  0 0 40px  40px;
-        top: 40%;
-        
+        transform: translateY(0%);
+        border-radius: 40px;
+        top: 60%;
     }
 
     .toggle-panel {
-        transform: translateY(-20%);
-        top: 8px;
+        top: -50px;
     }
- 
+
     .toggle-left {
-        transform: translate(100%, 100%);
-        min-height: 65vh;
-        
+        transform: translateX(200%);
+        min-height: 30vh;
+    }
+
+    .container.active .toggle-left {
+        transform: translateX(0);
     }
 
 
-    .container.active .toggle-right{
-        transform: translate(-100%, 100%);
-
-
+    .container.active .toggle-right {
+        transform: translateX(200%);
     }
+}
 
-    
-  }

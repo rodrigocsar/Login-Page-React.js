@@ -25,3 +25,8 @@ button.hidden{
     transition: background-color 0.1s ease;
   }
 
+button:hover{
+  background-color: #512da8;
+  transition: background-color 0.1s ease;
+
+}

@@ -1,6 +1,13 @@
+
 .forgot-container { 
     z-index: 9999; 
     opacity: 0;
+ 
+}
+
+.forgot-email {
+    top: -8px;
+    max-width: 90%;
 }
 
 .forgot-container.active {
@@ -12,25 +19,47 @@
     margin: 3px;
 }
 
- .forgot-input {
+
+
+.forgot-input {
     grid-template-columns: repeat(6, 1fr);
     padding: 0 30px;
     gap: 10px;
+    
 }
 
-.forgot-input .input-box {
+ .input-box {
     width: 40px;
     height: 40px;
     margin-top: 5px;
     border: 2px solid rgb(255, 255, 255); 
+    text-align: center;
+    
+}
+
+.div-button-email{
+    top: 20px;
+}
+
+.div-button-email button {
+    white-space: nowrap;
+    padding: 10px;
+    width: 30%;
+
 }
 
 .div-button-forgot {
-    margin: 10px;
+    top: 20px;
+    white-space: nowrap;
 }
 
 
 @media (max-width: 575.98px) {
+
+        .forgot, .forgot-email {
+          top: -80px;
+        }
+    
 
         .forgot-pass p {
             white-space: nowrap;
@@ -43,14 +72,18 @@
         .forgot-input {
             gap: 3px;
         }
-        .forgot-input input {
-            height: 130%;
 
+        .div-button-email{
+            width: 50%;
+            left: 63px;
         }
-
+        
         .div-button-forgot {
             width: 50%;
             margin: 15px;
+            left: 63px;
+            
         }
+       
 
 }
