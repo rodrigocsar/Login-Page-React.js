@@ -1,6 +1,6 @@
 label.sing-up-input i {
     color: #afaeae;
-    
+
 }
 
 .input-sing-up {
@@ -15,15 +15,15 @@ label.sing-up-input i {
     
 }
 
-.input-sing-up .fa-user, .input-sing-up .fa-lock{
+.input-sing-up .fa-user, 
+.input-sing-up .fa-lock{
     left: 18px;
     
 }
 
-input.input-email, .input-password {
-  
+input.input-email, 
+.input-password {
     text-indent: 25px;
-
 }
 
 .sign-up {
@@ -45,27 +45,32 @@ input.input-email, .input-password {
 
     .form-sing-up {
         position: relative;
-       top: 50px;
+        top: 13%;
+        margin-top: 1px;
+
+    }
+
+    .form-sing-up button {
+        position: relative;
+        top: -4%;
        
+
     }
 
     .input-sing-up .fa-eye-slash, 
     .input-sing-up .fa-eye{
         position: relative;
         left: 85%;
-    
+
 }   .sign-up {
     left: 100%;
     transition: all 0.6s ease-in-out;
 
-    
 }
 
     .container.active .sign-up {
         transform: translateX(-100%);
         transition: all 0.6s ease-in-out;
-
-
 
     }
 
