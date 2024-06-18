@@ -51,6 +51,7 @@ export const FormSingIn: React.FC = () => {
                 type='email'
                 placeholder='E-mail'
                 aria-label='Email'
+                autoComplete='email' 
                 className='input-email border-0 my-1 py-2 px-3 w-100'
               />
 
