@@ -26,6 +26,8 @@ input.input-email,
     text-indent: 25px;
 }
 
+
+
 .sign-up {
     left: 0;
     width: 50%;
@@ -56,6 +58,7 @@ input.input-email,
        
 
     }
+
 
     .input-sing-up .fa-eye-slash, 
     .input-sing-up .fa-eye{

@@ -60,17 +60,17 @@ const ForgotEmailSection: React.FC<{ handleShowInput: () => void }> = ({ handleS
       <h1>Hello, Please</h1>
       <p>type your e-mail</p>
     </div>
-    <div className="div-input-email">
-      <i className='fa-solid fa-user m-0 my-3 mx-1' />
+    <div className="div-input-email position-relative">
+      <i className='fa-solid fa-user m-0 my-1 py-2' />
       <input
         type='email'
         placeholder='E-mail'
         aria-label='Email'
-        className='input-email border-0 position-relative my-1 py-2 px-3 w-100'
+        className='input-email border-0  my-0 py-2 px-3 w-100'
       />
     </div>
     <div className='div-button-email position-relative'>
-      <Button id='verification' aria-label='To Go Back' onClick={handleShowInput} text="Send my email" />
+      <Button id='verification' aria-label='To Go Back' onClick={handleShowInput} text="Send to my email" />
     </div>
   </div>
 );

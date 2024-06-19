@@ -54,6 +54,7 @@ export const FormSingUp: React.FC = () => {
             />
           </div>
         </div>
+        
         <button aria-label='Create registration button'>Sign Up</button>
       </form>
     </div>

@@ -51,6 +51,11 @@
     white-space: nowrap;
 }
 
+.div-input-email .fa-solid {
+    color: #afaeae;
+    bottom: -1px;
+}
+
 @media (max-width: 575.98px) {
 
         .forgot, .forgot-email {
