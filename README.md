@@ -9,7 +9,7 @@ Aqui nessa nova versão utilizo outras tecnologias, esta mais responsivo e você
 ### Aqui esta o link do projeto original para a comparação:
  https://www.youtube.com/watch?v=PlpM2LJWu-s
 
- <img src="../LonginPage.gif?" alt="Gif Login Page">
+ <img src="./gif/LonginPage.gif" alt="Gif Login Page">
 
  ## Tecnologias Utilizadas
 
