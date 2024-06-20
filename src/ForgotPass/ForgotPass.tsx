@@ -70,7 +70,7 @@ const ForgotEmailSection: React.FC<{ handleShowInput: () => void }> = ({ handleS
       />
     </div>
     <div className='div-button-email position-relative'>
-      <Button id='verification' aria-label='To Go Back' onClick={handleShowInput} text="Send to my email" />
+      <Button id='verification' aria-label='To Go Back' onClick={handleShowInput} text="Send" />
     </div>
   </div>
 );
